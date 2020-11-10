@@ -1,11 +1,11 @@
 # 預備知識
 
-* <p style="font-weight:900;">session - cookie</p>
+* session - cookie
 
     ![image](/image/SessionCookie.png)
 
 
-* <p style="font-weight:900;">Jwt Web Token</p>
+* Jwt Web Token
 
     - 驗證過程
         1. 伺服器端在收到登入請求後驗證使用者
@@ -77,7 +77,7 @@
 ___
 * 此次範例中,加密名的算法是使用對稱式而非非對稱式,請注意.
 
-* <p style="color:lightgreen; font-weight:900;">生產 Jwt Bearer token</p>
+* 生產 Jwt Bearer token
     1. 安裝 Nuhget Package
         > Microsoft.AspNetCore.Authentication.JwtBearer
     1. 產生 Jwt Beaer 的過程
@@ -124,7 +124,7 @@ ___
             var tokenJson = new JwtSecurityTokenHandler().WriteToken(token);
             ```
 
-* <p style="color:lightgreen; font-weight:900;">使 .Net Core 使用 Jwt bearer 做為 Authentication 的方式</p>
+* 使 .Net Core 使用 Jwt bearer 做為 Authentication 的方式
     ```c#
     services.AddAuthentication("OAuth")
             .AddJwtBearer("OAuth", config => {
